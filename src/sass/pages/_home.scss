@@ -1,3 +1,71 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+
+
+//Parte Imagenes
+.mobile_devices, .responsive_design{
+    
+    &__img img{
+        max-width: 35vw;
+    }
+}
+
+//Parte textos
+
+.mobile_devices, .responsive_design{
+    padding-top: 1em;
+    &__texto{
+        padding: 20px;
+    }
+}
+
+.texto{
+
+    &__titulo, &__parrafo, &__lista, &__code{
+        margin-bottom: 30px;
+    }
+    &__code{
+        border-left: 2px solid $colorAzul;
+        padding: 10px 10px 10px 20px;
+
+    }
+
+    &__boton{
+        padding: 15px 20px;
+        color: white;
+        font-size: 0.75rem;
+        background-color: $colorAzul;
+        border-radius: 5px;
+        border: none;
+
+        img{
+            height: 12px;
+            padding-right: 5px;
+        }
+    } 
+
+    &__lista ul{
+        list-style: none;
+        padding: 0;
+        line-height: 1.5em;
+    }
+
+    &__lista li::before{
+        content: '✓';
+        color: $colorAzul;
+        padding-right: 10px;
+    }
+    
+}
+
+//Mobile Devices
+
+.mobile_devices{
+    background-color: map-get($colorFondo, oscuro);
+}
+
+//Responsive Design
+.responsive_design{
+    background-color: map-get($colorFondo, claro);
+}

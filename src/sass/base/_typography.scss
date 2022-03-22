@@ -1,3 +1,26 @@
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.texto{
+
+    &__titulo{
+        color: $colorNegro;
+        font-size: 2rem;
+    }
+
+    &__parrafo, &__lista{
+        color: $colorGris;
+        font-size: 1rem;
+    }
+
+    &__code{
+        color: $colorAzul;
+        font-size: 1rem;
+    }
+}
